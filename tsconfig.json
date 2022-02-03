@@ -1,19 +1,19 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
-      "module": "commonjs",
-      "esModuleInterop": false,
-      "allowSyntheticDefaultImports": true,
-      "target": "es6",
-      "noImplicitAny": true,
-      "moduleResolution": "node",
-      "sourceMap": true,
-      "outDir": "dist",
-      "declaration": true
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "declaration": true
   },
-  "include": [
-      "src/**/*","test/**/*"
-  ]
+  "include": ["src/**/*", "test/**/*"]
 }
