@@ -97,6 +97,22 @@ let { size, ...book5 } = book4;
 
 ## 其他
 
+适用于 tsc + es6 （ 不支持 babel / es5 ）
+
+```json
+// tsconfig.json
+{
+  // ...
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // ...
+  }
+}
+```
+
+## 鸣谢
+
 原作者：[Moshe Gottlieb](https://sharkfood.com)
 
 更多细节，请参考原始文档：[README.en.md](./README.en.md)

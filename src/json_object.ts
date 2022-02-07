@@ -395,8 +395,14 @@ export class JSONObject extends Object {
   }
 }
 
+type DeepPartial<T> = T extends object
+  ? {
+      [P in keyof T]?: DeepPartial<T[P]>;
+    }
+  : T;
+
 export class SafeJSON<T extends any> extends JSONObject {
-  constructor(json?: Partial<T>) {
+  constructor(json?: DeepPartial<T>) {
     super(json ?? {});
   }
 }
